@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Questrial');
+
+body{
+	font-size: 20px;
+	font-family: 'Questrial', sans-serif;
+	color: #333;
+  font-weight: 300;
+  text-align: center;
+  background-color: #fff9e5;
+}
+
+h1{
+  font-family: 'Orbitron', sans-serif;
+  margin: 0px;
+  padding: 10px;
+  font-size: 35px;
+  background-color: #777;
+  color: #fff;
+}
+
+a{
+	text-decoration: none;
+	color: #922;
+}
+
+.question{
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+}
+
+.answers label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+button{
+  font-family: 'Questrial', sans-serif;
+	font-size: 18px;
+	background-color: #922;
+	color: #fff;
+	border: 0px;
+	border-radius: 3px;
+	padding: 20px;
+	cursor: pointer;
+	margin: 3em 1em;
+}
+
+button:hover{
+	background-color: #bc6060;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container{
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+.credits{
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+@media only screen and (max-width: 426px){
+	h1, .question{
+		font-size: 20px;
+	}
+
+	button{
+		padding: 10px;
+		margin: 5em 0;
+	}
+}
