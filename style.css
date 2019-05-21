@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron|Questrial');
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Questrial|Anton');
 
 body{
 	font-size: 20px;
@@ -51,6 +51,19 @@ button{
 	margin: 3em 1em;
 }
 
+.submitButton{
+	display: inline-block;
+  font-family: 'Questrial', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: rgb(64, 78, 255);
+	margin: 3em 1em;
+}
+
 button:hover{
 	background-color: #bc6060;
 }
@@ -58,7 +71,7 @@ button:hover{
 .slide{
   position: absolute;
   left: 0px;
-  top: 0px;
+  top: -2em;
   width: 100%;
   z-index: 1;
   opacity: 0;
@@ -76,9 +89,19 @@ button:hover{
   margin-top: 40px;
 }
 
+.hint{
+	display: none;
+	font-family: 'Anton', sans-serif;
+	font-size: 15px;
+}
+
 .credits{
 	font-size: 14px;
 	margin-top: 5px;
+}
+
+.navigation-container{
+	padding-top: 2em;
 }
 
 @media only screen and (max-width: 426px){
@@ -87,7 +110,29 @@ button:hover{
 	}
 
 	button{
-		padding: 10px;
+		padding: 9px;
 		margin: 5em 0;
+	}
+
+	.submitButton{
+		padding: 9px;
+	}
+
+	.answers{
+		margin-bottom: 0;
+		font-size: 18px;
+	}
+
+	.hint{
+		font-size: 0.75em;
+		padding: 0 0.3em 0 0.3em;
+	}
+
+	.navigation-container{
+		padding-top: 4em;
+	}
+
+	.results{
+		margin-top: -100px;
 	}
 }
