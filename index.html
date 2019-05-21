@@ -4,18 +4,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="style.css" rel="stylesheet" type="text/css">
+  <script>
+    globalFn = {};
+  </script>
 </head>
+
 <body>
   <h1>Brutal Retrogaming Quiz</h1>
   <div class='credits'>
-    Coded by mctworks. Questions written by <a href='https://twitter.com/ReverendCrush' target='_blank'>@ReverendCrush</a>.
+    Coded by mctworks. Questions submitted by <a href='https://twitter.com/ReverendCrush' target='_blank'>@ReverendCrush</a>.
   </div>
   <div class='quiz-container'>
     <div id='quiz'></div>
   </div>
-  <button id="previous">Previous Question</button>
-  <button type="button" id="next">Next Question</button>
-  <button id='submit'>Submit Quiz</button>
+  <div class="navigation-container">
+    <button id="previous" data-question="0">Previous</button>
+    <button id="showhint" data-question="0">Hint</button>
+    <button id="next" data-question="0">Next</button>
+    <a href="#results" class='submitButton' id='submit'>Finish Quiz</a>
+  </div>
   <div id='results'></div>
   <div id='retry'></div>
   <script src="script.js"></script>
